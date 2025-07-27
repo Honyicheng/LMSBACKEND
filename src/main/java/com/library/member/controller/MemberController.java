@@ -2,16 +2,20 @@ package com.library.member.controller;
 
 import com.library.common.entity.Book;
 import com.library.common.entity.Loan;
+import com.library.common.entity.ReminderDto;
 import com.library.common.entity.User;
 import com.library.common.repository.BookRepository;
 import com.library.common.repository.LoanRepository;
 import com.library.common.repository.UserRepository;
+import com.library.member.service.EmailReminderService;
 import com.library.member.service.MemberService;
 import com.library.member.payload.ProfileUpdateRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -118,6 +122,24 @@ public class MemberController {
 
         log.info("User {} borrowed book {}", user.getUsername(), book.getTitle());
         return ResponseEntity.ok("Book borrowed successfully!");
+    }
+
+
+    @RestController
+    @RequestMapping("/api/member")
+    @RequiredArgsConstructor
+    @PreAuthorize("hasRole('MEMBER')")
+    public class MemberReminderController {
+
+        private final EmailReminderService emailReminderService;
+        private final UserRepository userRepository;
+
+        @GetMapping("/email-reminders")
+        public List<ReminderDto> getReminders(Principal principal) {
+            User user = userRepository.findByUsername(principal.getName())
+                    .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+            return emailReminderService.getRemindersForUser(user);
+        }
     }
 
 

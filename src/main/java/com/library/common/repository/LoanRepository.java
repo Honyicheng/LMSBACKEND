@@ -20,5 +20,6 @@ public interface LoanRepository extends JpaRepository<Loan, Long> {
 
     List<Loan> findByUserAndReturnedFalse(User user);
 
-//    List<Loan> findByUserAndReturnedAtIsNull(User user);
+    @Query("SELECT l FROM Loan l JOIN FETCH l.user JOIN FETCH l.book WHERE l.returned = false")
+    List<Loan> findByReturnedFalse();
 }

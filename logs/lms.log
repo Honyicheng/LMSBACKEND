@@ -1,525 +1,97 @@
-2025-07-25T00:00:13.146+08:00  INFO 18068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T00:00:13.158+08:00  INFO 18068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T00:00:13.160+08:00  INFO 18068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-25T00:00:13.213+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:00:13.253+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans
-2025-07-25T00:00:13.538+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans
-2025-07-25T00:00:13.615+08:00  WARN 18068 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'bookId' for method parameter type Long is not present]
-2025-07-25T00:03:55.172+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:03:55.173+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:03:55.183+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:03:55.184+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:03:55.200+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:03:55.201+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:03:59.168+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:03:59.172+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans
-2025-07-25T00:03:59.181+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans
-2025-07-25T00:03:59.185+08:00  WARN 18068 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'bookId' for method parameter type Long is not present]
-2025-07-25T00:09:26.180+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:09:26.180+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:09:26.189+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:09:26.190+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:09:26.206+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:09:26.206+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:09:30.987+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=101
-2025-07-25T00:09:30.991+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=101
-2025-07-25T00:09:31.001+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=101
-2025-07-25T00:09:31.251+08:00  INFO 18068 --- [http-nio-8080-exec-8] c.l.member.controller.MemberController   : User member2 borrowed book Clean Code
-2025-07-25T00:09:33.856+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:09:33.857+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:09:33.862+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:09:33.862+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:09:33.884+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:09:33.885+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:09:43.952+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=102
-2025-07-25T00:09:43.957+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=102
-2025-07-25T00:09:43.970+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=102
-2025-07-25T00:09:43.999+08:00  INFO 18068 --- [http-nio-8080-exec-4] c.l.member.controller.MemberController   : User member2 borrowed book The Pragmatic Programmer
-2025-07-25T00:09:45.927+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:09:45.928+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:09:45.937+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:09:45.937+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:09:46.008+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:09:46.010+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:09:55.563+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=112
-2025-07-25T00:09:55.566+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=112
-2025-07-25T00:09:55.574+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=112
-2025-07-25T00:10:13.829+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:13.829+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:10:13.849+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:10:13.849+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:13.875+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:10:13.878+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:10:29.239+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:29.243+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:29.247+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:29.267+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:10:29.291+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:29.309+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:10:49.369+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:49.372+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:10:49.375+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:10:49.377+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:49.377+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:49.379+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:10:49.392+08:00 DEBUG 18068 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:10:49.392+08:00 DEBUG 18068 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:10:49.409+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:10:49.418+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:49.432+08:00 DEBUG 18068 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:10:49.439+08:00 DEBUG 18068 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:10:55.824+08:00 DEBUG 18068 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=112
-2025-07-25T00:10:55.827+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=112
-2025-07-25T00:10:55.837+08:00 DEBUG 18068 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=112
-2025-07-25T00:10:58.720+08:00 DEBUG 18068 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:10:58.722+08:00 DEBUG 18068 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:10:58.735+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:10:58.736+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:10:58.761+08:00 DEBUG 18068 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:10:58.760+08:00 DEBUG 18068 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:12:44.139+08:00  INFO 18068 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T00:12:44.143+08:00  INFO 18068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-25T00:12:44.154+08:00  INFO 18068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T00:12:51.044+08:00  INFO 24584 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 24584 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T00:12:51.048+08:00  INFO 24584 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T00:12:51.144+08:00  INFO 24584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T00:12:51.144+08:00  INFO 24584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T00:12:53.337+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T00:12:53.339+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T00:12:53.588+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 6 JPA repository interfaces.
-2025-07-25T00:12:53.626+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T00:12:53.629+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T00:12:53.655+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.656+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.656+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.656+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.658+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.658+08:00  INFO 24584 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:12:53.659+08:00  INFO 24584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-2025-07-25T00:12:55.368+08:00  INFO 24584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T00:12:55.389+08:00  INFO 24584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T00:12:55.390+08:00  INFO 24584 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T00:12:55.497+08:00  INFO 24584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T00:12:55.497+08:00  INFO 24584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4352 ms
-2025-07-25T00:12:56.124+08:00  INFO 24584 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T00:12:56.290+08:00  INFO 24584 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T00:12:56.430+08:00  INFO 24584 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T00:12:56.885+08:00  INFO 24584 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T00:12:56.952+08:00  INFO 24584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T00:12:57.455+08:00  INFO 24584 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63bdd24a
-2025-07-25T00:12:57.458+08:00  INFO 24584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T00:12:57.547+08:00  WARN 24584 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T00:12:58.942+08:00  INFO 24584 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T00:12:59.054+08:00  INFO 24584 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T00:12:59.820+08:00  INFO 24584 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T00:13:02.508+08:00  WARN 24584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T00:13:03.451+08:00  INFO 24584 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T00:13:03.647+08:00  INFO 24584 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@49609e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@702a3a9, org.springframework.security.web.context.SecurityContextHolderFilter@63111a0, org.springframework.security.web.header.HeaderWriterFilter@1a125773, org.springframework.web.filter.CorsFilter@4b988342, org.springframework.security.web.authentication.logout.LogoutFilter@6184fd95, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@46ed2912, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@6b19b445, com.library.auth.security.AuthTokenFilter@3b8ab607, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49d1f0f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d09947, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f57c486, org.springframework.security.web.session.SessionManagementFilter@4e224fcd, org.springframework.security.web.access.ExceptionTranslationFilter@6f7d29a5, org.springframework.security.web.access.intercept.AuthorizationFilter@5f7daf9b]
-2025-07-25T00:13:05.160+08:00  INFO 24584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T00:13:05.282+08:00  INFO 24584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T00:13:05.303+08:00  INFO 24584 --- [restartedMain] com.library.Application                  : Started Application in 15.108 seconds (process running for 15.983)
-2025-07-25T00:13:24.005+08:00  INFO 24584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T00:13:24.005+08:00  INFO 24584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T00:13:24.007+08:00  INFO 24584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-07-25T00:13:24.047+08:00 DEBUG 24584 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=112
-2025-07-25T00:13:24.085+08:00 DEBUG 24584 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=112
-2025-07-25T00:13:24.442+08:00 DEBUG 24584 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=112
-2025-07-25T00:13:24.511+08:00  WARN 24584 --- [http-nio-8080-exec-2] c.l.member.controller.MemberController   : User member2 attempted to borrow more than 3 books
-2025-07-25T00:14:46.215+08:00 DEBUG 24584 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:14:46.215+08:00 DEBUG 24584 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:14:46.227+08:00 DEBUG 24584 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:14:46.227+08:00 DEBUG 24584 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:14:46.247+08:00 DEBUG 24584 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:14:46.247+08:00 DEBUG 24584 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:21:27.169+08:00 DEBUG 24584 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:21:27.170+08:00 DEBUG 24584 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:21:27.179+08:00 DEBUG 24584 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:21:27.179+08:00 DEBUG 24584 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:21:27.195+08:00 DEBUG 24584 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:21:27.195+08:00 DEBUG 24584 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:21:33.266+08:00  INFO 24584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T00:21:33.271+08:00  INFO 24584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-25T00:21:33.280+08:00  INFO 24584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T00:21:39.588+08:00  INFO 1796 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 1796 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T00:21:39.590+08:00  INFO 1796 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T00:21:39.681+08:00  INFO 1796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T00:21:39.682+08:00  INFO 1796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T00:21:41.828+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T00:21:41.830+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T00:21:42.046+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205 ms. Found 6 JPA repository interfaces.
-2025-07-25T00:21:42.090+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T00:21:42.098+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T00:21:42.130+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.130+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.131+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.131+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.132+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.133+08:00  INFO 1796 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T00:21:42.133+08:00  INFO 1796 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2025-07-25T00:21:43.693+08:00  INFO 1796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T00:21:43.711+08:00  INFO 1796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T00:21:43.712+08:00  INFO 1796 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T00:21:43.814+08:00  INFO 1796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T00:21:43.814+08:00  INFO 1796 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4131 ms
-2025-07-25T00:21:44.402+08:00  INFO 1796 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T00:21:44.501+08:00  INFO 1796 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T00:21:44.591+08:00  INFO 1796 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T00:21:45.046+08:00  INFO 1796 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T00:21:45.093+08:00  INFO 1796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T00:21:45.563+08:00  INFO 1796 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e41cb2b
-2025-07-25T00:21:45.565+08:00  INFO 1796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T00:21:45.661+08:00  WARN 1796 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T00:21:47.059+08:00  INFO 1796 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T00:21:47.182+08:00  INFO 1796 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T00:21:47.917+08:00  INFO 1796 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T00:21:50.046+08:00  WARN 1796 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T00:21:50.965+08:00  INFO 1796 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T00:21:51.150+08:00  INFO 1796 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1482522b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f229407, org.springframework.security.web.context.SecurityContextHolderFilter@5c146aee, org.springframework.security.web.header.HeaderWriterFilter@1c8c1ee2, org.springframework.web.filter.CorsFilter@64f56ab8, org.springframework.security.web.authentication.logout.LogoutFilter@39c8bf64, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@45bf5056, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@388c3407, com.library.auth.security.AuthTokenFilter@4ec1404b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@399c8a21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28b3e48c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c58dacd, org.springframework.security.web.session.SessionManagementFilter@3a6d1fc2, org.springframework.security.web.access.ExceptionTranslationFilter@6e2a1750, org.springframework.security.web.access.intercept.AuthorizationFilter@4748541c]
-2025-07-25T00:21:52.450+08:00  INFO 1796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T00:21:52.555+08:00  INFO 1796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T00:21:52.576+08:00  INFO 1796 --- [restartedMain] com.library.Application                  : Started Application in 13.804 seconds (process running for 14.632)
-2025-07-25T00:22:18.646+08:00  INFO 1796 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T00:22:18.646+08:00  INFO 1796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T00:22:18.649+08:00  INFO 1796 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-07-25T00:22:18.680+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans?bookId=112
-2025-07-25T00:22:18.722+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/member/loans?bookId=112
-2025-07-25T00:22:18.991+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/member/loans?bookId=112
-2025-07-25T00:22:19.048+08:00  WARN 1796 --- [http-nio-8080-exec-2] c.l.member.controller.MemberController   : User member2 attempted to borrow more than 3 books
-2025-07-25T00:31:19.185+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:31:19.186+08:00 DEBUG 1796 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:31:19.187+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:31:19.188+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:31:19.199+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:31:19.200+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:31:19.216+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:31:19.216+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:31:19.342+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:31:19.343+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:31:19.355+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:31:19.355+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:31:35.448+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/login
-2025-07-25T00:31:35.461+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
-2025-07-25T00:31:35.463+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T00:31:35.464+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
-2025-07-25T00:31:35.902+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-07-25T00:31:35.902+08:00  INFO 1796 --- [http-nio-8080-exec-3] com.library.auth.security.JwtUtils       : key=
-2025-07-25T00:31:38.132+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:31:38.138+08:00 DEBUG 1796 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:31:38.138+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:31:38.144+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:31:38.144+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:31:38.145+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:31:38.161+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:31:38.162+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:31:38.176+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:31:38.181+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:31:38.187+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:31:38.192+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:35:32.181+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:35:32.182+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:35:32.182+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:35:32.183+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:35:32.189+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:35:32.189+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:35:32.199+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:35:32.199+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:35:32.212+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:35:32.218+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:35:32.222+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:35:32.228+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:35:45.262+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/profile/member2
-2025-07-25T00:35:45.265+08:00 DEBUG 1796 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/profile/member2
-2025-07-25T00:35:45.269+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/member/profile/member2
-2025-07-25T00:35:45.286+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/member/profile/member2
-2025-07-25T00:35:45.314+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/member/profile/member2
-2025-07-25T00:35:45.328+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/member/profile/member2
-2025-07-25T00:35:49.600+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:35:49.602+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:35:49.610+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:35:49.627+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:35:49.643+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:35:49.652+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:35:56.705+08:00 DEBUG 1796 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans/203/return
-2025-07-25T00:35:56.710+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing PUT /api/member/loans/203/return
-2025-07-25T00:35:56.727+08:00 DEBUG 1796 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured PUT /api/member/loans/203/return
-2025-07-25T00:35:56.822+08:00 DEBUG 1796 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T00:35:56.829+08:00 DEBUG 1796 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:35:56.851+08:00 DEBUG 1796 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:36:00.146+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:36:00.148+08:00 DEBUG 1796 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:36:00.152+08:00 DEBUG 1796 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T00:36:00.154+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:36:00.167+08:00 DEBUG 1796 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T00:36:00.171+08:00 DEBUG 1796 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:36:00.187+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T00:36:00.194+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T00:36:00.206+08:00 DEBUG 1796 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T00:36:00.210+08:00 DEBUG 1796 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T11:14:40.248+08:00  INFO 15004 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 15004 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T11:14:40.252+08:00  INFO 15004 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T11:14:40.391+08:00  INFO 15004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T11:14:40.391+08:00  INFO 15004 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T11:14:43.883+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:14:43.889+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T11:14:44.522+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 609 ms. Found 6 JPA repository interfaces.
-2025-07-25T11:14:44.573+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:14:44.580+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T11:14:44.663+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.664+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.666+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.667+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.673+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.675+08:00  INFO 15004 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:14:44.677+08:00  INFO 15004 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
-2025-07-25T11:14:49.136+08:00  INFO 15004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T11:14:49.185+08:00  INFO 15004 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T11:14:49.186+08:00  INFO 15004 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T11:14:49.453+08:00  INFO 15004 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T11:14:49.454+08:00  INFO 15004 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9062 ms
-2025-07-25T11:14:50.599+08:00  INFO 15004 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T11:14:50.820+08:00  INFO 15004 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T11:14:50.906+08:00  INFO 15004 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T11:14:51.427+08:00  INFO 15004 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T11:14:51.475+08:00  INFO 15004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T11:14:52.410+08:00  INFO 15004 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49821b3b
-2025-07-25T11:14:52.416+08:00  INFO 15004 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T11:14:52.678+08:00  WARN 15004 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T11:14:56.276+08:00  INFO 15004 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T11:14:56.718+08:00  INFO 15004 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T11:14:58.902+08:00  INFO 15004 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T11:15:03.716+08:00  WARN 15004 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T11:15:05.354+08:00  INFO 15004 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T11:15:05.693+08:00  INFO 15004 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25ac7bc9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@242d1937, org.springframework.security.web.context.SecurityContextHolderFilter@7ded3b0d, org.springframework.security.web.header.HeaderWriterFilter@4853f27f, org.springframework.web.filter.CorsFilter@55ade5de, org.springframework.security.web.authentication.logout.LogoutFilter@23a02a3b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@215a4dba, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@2b44c8ce, com.library.auth.security.AuthTokenFilter@362d6130, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ea52637, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67ea47a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32c8a97, org.springframework.security.web.session.SessionManagementFilter@5d7e4a5f, org.springframework.security.web.access.ExceptionTranslationFilter@30a012f4, org.springframework.security.web.access.intercept.AuthorizationFilter@7af2c89c]
-2025-07-25T11:15:08.315+08:00  INFO 15004 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T11:15:08.516+08:00  INFO 15004 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T11:15:08.569+08:00  INFO 15004 --- [restartedMain] com.library.Application                  : Started Application in 29.749 seconds (process running for 31.687)
-2025-07-25T11:15:32.556+08:00  INFO 15004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T11:15:32.560+08:00  INFO 15004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-25T11:15:32.574+08:00  INFO 15004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T11:18:07.438+08:00  INFO 8860 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 8860 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T11:18:07.443+08:00  INFO 8860 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T11:18:07.597+08:00  INFO 8860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T11:18:07.598+08:00  INFO 8860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T11:18:11.386+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:18:11.389+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T11:18:11.788+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 382 ms. Found 6 JPA repository interfaces.
-2025-07-25T11:18:11.831+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:18:11.835+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T11:18:11.878+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.878+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.879+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.879+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.881+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.882+08:00  INFO 8860 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:18:11.882+08:00  INFO 8860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2025-07-25T11:18:14.605+08:00  INFO 8860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T11:18:14.633+08:00  INFO 8860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T11:18:14.634+08:00  INFO 8860 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T11:18:14.784+08:00  INFO 8860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T11:18:14.785+08:00  INFO 8860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7185 ms
-2025-07-25T11:18:15.725+08:00  INFO 8860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T11:18:16.070+08:00  INFO 8860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T11:18:16.200+08:00  INFO 8860 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T11:18:16.710+08:00  INFO 8860 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T11:18:16.774+08:00  INFO 8860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T11:18:17.444+08:00  INFO 8860 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44ba624a
-2025-07-25T11:18:17.449+08:00  INFO 8860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T11:18:17.551+08:00  WARN 8860 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T11:18:19.526+08:00  INFO 8860 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T11:18:19.675+08:00  INFO 8860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T11:18:20.836+08:00  INFO 8860 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T11:18:24.869+08:00  WARN 8860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T11:18:26.218+08:00  INFO 8860 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T11:18:26.540+08:00  INFO 8860 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c884d05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610e55c6, org.springframework.security.web.context.SecurityContextHolderFilter@1609761b, org.springframework.security.web.header.HeaderWriterFilter@7c7ace63, org.springframework.web.filter.CorsFilter@28d2610a, org.springframework.security.web.authentication.logout.LogoutFilter@3c7ef835, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@9f0af22, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@181fdfee, com.library.auth.security.AuthTokenFilter@432ce54b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ac54b81, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@791c0382, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@679a84eb, org.springframework.security.web.session.SessionManagementFilter@150bf229, org.springframework.security.web.access.ExceptionTranslationFilter@44151c65, org.springframework.security.web.access.intercept.AuthorizationFilter@2cc90379]
-2025-07-25T11:18:28.110+08:00  INFO 8860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T11:18:28.275+08:00  INFO 8860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T11:18:28.314+08:00  INFO 8860 --- [restartedMain] com.library.Application                  : Started Application in 22.219 seconds (process running for 23.801)
-2025-07-25T11:38:47.339+08:00  INFO 8860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T11:38:47.342+08:00  INFO 8860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T11:38:47.346+08:00  INFO 8860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2025-07-25T11:38:47.476+08:00 DEBUG 8860 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:38:47.518+08:00 DEBUG 8860 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:38:47.529+08:00 DEBUG 8860 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:38:47.761+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:38:47.763+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:38:47.764+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:47:52.998+08:00 DEBUG 8860 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:47:53.001+08:00 DEBUG 8860 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:47:53.003+08:00 DEBUG 8860 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:47:53.024+08:00 DEBUG 8860 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:47:53.026+08:00 DEBUG 8860 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:47:53.028+08:00 DEBUG 8860 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:50:01.092+08:00 DEBUG 8860 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T11:50:01.098+08:00 DEBUG 8860 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T11:50:01.100+08:00 DEBUG 8860 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:50:01.101+08:00 DEBUG 8860 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T11:59:23.198+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:59:23.201+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:59:23.202+08:00 DEBUG 8860 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:59:23.223+08:00 DEBUG 8860 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T11:59:23.225+08:00 DEBUG 8860 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T11:59:23.226+08:00 DEBUG 8860 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T11:59:41.000+08:00  INFO 8860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T11:59:41.054+08:00  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-25T11:59:41.068+08:00  INFO 8860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T11:59:50.736+08:00  INFO 17420 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 17420 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T11:59:50.741+08:00  INFO 17420 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T11:59:50.881+08:00  INFO 17420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T11:59:50.881+08:00  INFO 17420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T11:59:53.699+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:59:53.702+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T11:59:54.055+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 316 ms. Found 6 JPA repository interfaces.
-2025-07-25T11:59:54.100+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T11:59:54.105+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T11:59:54.138+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.139+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.139+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.140+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.142+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.142+08:00  INFO 17420 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T11:59:54.143+08:00  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-2025-07-25T11:59:56.459+08:00  INFO 17420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T11:59:56.490+08:00  INFO 17420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T11:59:56.491+08:00  INFO 17420 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T11:59:56.658+08:00  INFO 17420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T11:59:56.659+08:00  INFO 17420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5775 ms
-2025-07-25T11:59:57.599+08:00  INFO 17420 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T11:59:57.861+08:00  INFO 17420 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T11:59:57.960+08:00  INFO 17420 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T11:59:58.409+08:00  INFO 17420 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T11:59:58.464+08:00  INFO 17420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T11:59:59.162+08:00  INFO 17420 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f4f4b62
-2025-07-25T11:59:59.165+08:00  INFO 17420 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T11:59:59.254+08:00  WARN 17420 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T12:00:00.950+08:00  INFO 17420 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T12:00:01.088+08:00  INFO 17420 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T12:00:02.032+08:00  INFO 17420 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T12:00:05.689+08:00  WARN 17420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T12:00:07.044+08:00  INFO 17420 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T12:00:07.336+08:00  INFO 17420 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@283b81db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53e6ef8f, org.springframework.security.web.context.SecurityContextHolderFilter@132ce775, org.springframework.security.web.header.HeaderWriterFilter@2152bfae, org.springframework.web.filter.CorsFilter@192de7b3, org.springframework.security.web.authentication.logout.LogoutFilter@b47f041, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@26066421, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@53fdfa0e, com.library.auth.security.AuthTokenFilter@3efbef2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62e3bfff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3730af21, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13ca74d2, org.springframework.security.web.session.SessionManagementFilter@394c297d, org.springframework.security.web.access.ExceptionTranslationFilter@500aed93, org.springframework.security.web.access.intercept.AuthorizationFilter@41b99148]
-2025-07-25T12:00:09.718+08:00  INFO 17420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T12:00:09.867+08:00  INFO 17420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T12:00:09.895+08:00  INFO 17420 --- [restartedMain] com.library.Application                  : Started Application in 20.262 seconds (process running for 21.445)
-2025-07-25T12:00:40.668+08:00  INFO 17420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T12:00:40.668+08:00  INFO 17420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T12:00:40.670+08:00  INFO 17420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-07-25T12:00:40.704+08:00 DEBUG 17420 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:00:40.736+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:00:40.743+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:00:40.750+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:00:55.617+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/login
-2025-07-25T12:00:55.627+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
-2025-07-25T12:00:55.630+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:00:55.631+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
-2025-07-25T12:00:55.802+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
-2025-07-25T12:00:55.803+08:00  INFO 17420 --- [http-nio-8080-exec-4] com.library.auth.security.JwtUtils       : key=
-2025-07-25T12:01:05.953+08:00 DEBUG 17420 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T12:01:05.955+08:00 DEBUG 17420 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/loans
-2025-07-25T12:01:05.971+08:00 DEBUG 17420 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T12:01:06.052+08:00 DEBUG 17420 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T12:01:06.084+08:00 DEBUG 17420 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T12:01:06.094+08:00 DEBUG 17420 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T12:01:06.596+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T12:01:06.597+08:00 DEBUG 17420 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T12:01:06.598+08:00 DEBUG 17420 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/public/books
-2025-07-25T12:01:06.606+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:01:06.614+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T12:01:06.623+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:01:06.635+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/member/loans
-2025-07-25T12:01:06.653+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/member/loans
-2025-07-25T12:01:06.654+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:01:06.666+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:01:07.353+08:00 DEBUG 17420 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/profile/test66
-2025-07-25T12:01:07.357+08:00 DEBUG 17420 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/profile/test66
-2025-07-25T12:01:07.360+08:00 DEBUG 17420 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/member/profile/test66
-2025-07-25T12:01:07.378+08:00 DEBUG 17420 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/member/profile/test66
-2025-07-25T12:01:07.402+08:00 DEBUG 17420 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/member/profile/test66
-2025-07-25T12:01:07.419+08:00 DEBUG 17420 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/member/profile/test66
-2025-07-25T12:01:08.077+08:00 DEBUG 17420 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/questions/my
-2025-07-25T12:01:08.078+08:00 DEBUG 17420 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/member/questions/my
-2025-07-25T12:01:08.086+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/member/questions/my
-2025-07-25T12:01:08.104+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/member/questions/my
-2025-07-25T12:01:08.123+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/member/questions/my
-2025-07-25T12:01:08.132+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/member/questions/my
-2025-07-25T12:01:08.814+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:01:08.827+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:01:08.842+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:01:08.861+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:08:16.652+08:00 DEBUG 17420 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:08:16.659+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:08:16.659+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:08:16.660+08:00 DEBUG 17420 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:09:41.411+08:00 DEBUG 17420 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:09:41.416+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:09:41.416+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:09:41.417+08:00 DEBUG 17420 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:10:48.632+08:00 DEBUG 17420 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:10:48.637+08:00 DEBUG 17420 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:10:48.638+08:00 DEBUG 17420 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:10:48.638+08:00 DEBUG 17420 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:11:57.435+08:00 DEBUG 17420 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:11:57.438+08:00 DEBUG 17420 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:11:57.439+08:00 DEBUG 17420 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:11:57.440+08:00 DEBUG 17420 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:12:53.707+08:00  INFO 17420 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T12:12:53.712+08:00  INFO 17420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-07-25T12:12:53.726+08:00  INFO 17420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-07-25T12:13:02.166+08:00  INFO 1972 --- [restartedMain] com.library.Application                  : Starting Application using Java 21.0.4 with PID 1972 (C:\LMS1\com-library\target\classes started by han.bin in C:\LMS1\com-library)
-2025-07-25T12:13:02.171+08:00  INFO 1972 --- [restartedMain] com.library.Application                  : No active profile set, falling back to 1 default profile: "default"
-2025-07-25T12:13:02.312+08:00  INFO 1972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-07-25T12:13:02.313+08:00  INFO 1972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-07-25T12:13:05.458+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T12:13:05.462+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-25T12:13:05.781+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 300 ms. Found 6 JPA repository interfaces.
-2025-07-25T12:13:05.823+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-07-25T12:13:05.830+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-07-25T12:13:05.876+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.BookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.877+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.LoanRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.878+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.QuestionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.878+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.ReviewRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.882+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.883+08:00  INFO 1972 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.library.common.repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-07-25T12:13:05.883+08:00  INFO 1972 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2025-07-25T12:13:08.205+08:00  INFO 1972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-07-25T12:13:08.243+08:00  INFO 1972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-07-25T12:13:08.245+08:00  INFO 1972 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
-2025-07-25T12:13:08.423+08:00  INFO 1972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-07-25T12:13:08.424+08:00  INFO 1972 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6108 ms
-2025-07-25T12:13:09.690+08:00  INFO 1972 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-25T12:13:09.864+08:00  INFO 1972 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-07-25T12:13:09.949+08:00  INFO 1972 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-07-25T12:13:10.390+08:00  INFO 1972 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-07-25T12:13:10.442+08:00  INFO 1972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-07-25T12:13:11.173+08:00  INFO 1972 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e41cb2b
-2025-07-25T12:13:11.178+08:00  INFO 1972 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-07-25T12:13:11.318+08:00  WARN 1972 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-07-25T12:13:13.268+08:00  INFO 1972 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-07-25T12:13:13.467+08:00  INFO 1972 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-25T12:13:15.587+08:00  INFO 1972 --- [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-07-25T12:13:18.444+08:00  WARN 1972 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-25T12:13:19.800+08:00  INFO 1972 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2025-07-25T12:13:20.170+08:00  INFO 1972 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6087c8ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d7c1d6a, org.springframework.security.web.context.SecurityContextHolderFilter@7628a15d, org.springframework.security.web.header.HeaderWriterFilter@375b1a8f, org.springframework.web.filter.CorsFilter@4a2b8ba8, org.springframework.security.web.authentication.logout.LogoutFilter@378ca67c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@39732676, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7ec94bc3, com.library.auth.security.AuthTokenFilter@1398c804, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@374b216f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f7d29a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@379b0fe, org.springframework.security.web.session.SessionManagementFilter@51641d4d, org.springframework.security.web.access.ExceptionTranslationFilter@45625337, org.springframework.security.web.access.intercept.AuthorizationFilter@5f229407]
-2025-07-25T12:13:22.224+08:00  INFO 1972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-07-25T12:13:22.384+08:00  INFO 1972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2025-07-25T12:13:22.425+08:00  INFO 1972 --- [restartedMain] com.library.Application                  : Started Application in 21.542 seconds (process running for 22.782)
-2025-07-25T12:13:33.971+08:00  INFO 1972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-25T12:13:33.971+08:00  INFO 1972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-07-25T12:13:33.973+08:00  INFO 1972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-07-25T12:13:34.009+08:00 DEBUG 1972 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:13:34.040+08:00 DEBUG 1972 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:13:34.044+08:00 DEBUG 1972 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:13:34.050+08:00 DEBUG 1972 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:14:40.955+08:00 DEBUG 1972 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:14:40.959+08:00 DEBUG 1972 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:14:40.961+08:00 DEBUG 1972 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:14:41.092+08:00 DEBUG 1972 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/public/books
-2025-07-25T12:14:41.094+08:00 DEBUG 1972 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:14:41.095+08:00 DEBUG 1972 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/public/books
-2025-07-25T12:14:58.806+08:00 DEBUG 1972 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:14:58.812+08:00 DEBUG 1972 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:14:58.814+08:00 DEBUG 1972 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:14:58.815+08:00 DEBUG 1972 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
-2025-07-25T12:18:18.794+08:00 DEBUG 1972 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/signup
-2025-07-25T12:18:18.800+08:00 DEBUG 1972 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/signup
-2025-07-25T12:18:18.802+08:00 DEBUG 1972 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
-2025-07-25T12:18:18.803+08:00 DEBUG 1972 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/signup
+2025-07-28T00:00:00.199+08:00  INFO 2660 --- [lms-service] [scheduling-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-07-28T00:00:00.254+08:00  INFO 2660 --- [lms-service] [scheduling-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-07-28T00:00:00.289+08:00  INFO 2660 --- [lms-service] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.6.1
+2025-07-28T00:00:00.289+08:00  INFO 2660 --- [lms-service] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 5e3c2b738d253ff5
+2025-07-28T00:00:00.289+08:00  INFO 2660 --- [lms-service] [scheduling-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1753632000289
+2025-07-28T00:00:00.326+08:00  INFO 2660 --- [lms-service] [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: rkyMtE9_SZOXl1ncmmZfBw
+2025-07-28T00:00:00.643+08:00  INFO 2660 --- [lms-service] [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2000 with epoch 0
+2025-07-28T00:00:08.038+08:00  INFO 2660 --- [lms-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] c.l.notification.service.EmailService    : ✅ Email sent to honyicheng@gmail.com: [Library Notice] Overdue Book and Fine Notice

@@ -1,0 +1,20 @@
+#spring:
+#  cloud:
+#    nacos:
+#      server-addr: 127.0.0.1:8848  # Nacos 服务地址
+#      config:
+#        import-check:
+#          enabled: false  # 禁用 Nacos 配置导入检查（避免报错）
+#        # 如果需要从 Nacos 加载配置，可以添加：
+#        # file-extension: yaml
+#        # group: DEFAULT_GROUP
+#        # namespace: your-namespace-id
+#
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8858  # Sentinel Dashboard 地址
+#      eager: true  # 立即初始化 Sentinel（避免懒加载导致规则不生效）
+#
+## 如果 Sentinel Dashboard 本身需要配置端口，可以添加：
+#server:
+#  port: 8858  # Sentinel Dashboard 的运行端口

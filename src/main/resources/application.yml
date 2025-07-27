@@ -2,11 +2,49 @@ server:
   port: 8080
 
 spring:
+  application:
+    name: lms-service
+
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      config:
+        import-check:
+          enabled: false
+
+    sentinel:
+      transport:
+        dashboard: localhost:8858
+      eager: true
+
   datasource:
     url: jdbc:mysql://localhost:3306/lms_db
     username: root
     password: Singapore88$
     driver-class-name: com.mysql.cj.jdbc.Driver
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: lms-consumer-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: honyicheng@gmail.com
+    password: zkomuaxgadmfqmgs
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
   jpa:
     hibernate:
